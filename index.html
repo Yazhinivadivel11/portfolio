@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazhini V - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS START --- */
+        :root {
+            --primary-dark: #2c3e50;
+            --accent-blue: #34495e;
+            --text-color: #333;
+            --sidebar-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        header {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        header p { margin: 5px 0 0; font-size: 1.1rem; opacity: 0.9; }
+
+        .main-body { display: flex; }
+
+        .sidebar {
+            width: 35%;
+            background-color: var(--sidebar-bg);
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .profile-img-container { text-align: center; margin-bottom: 20px; }
+        .profile-img-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-dark);
+        }
+
+        .sidebar h3 {
+            border-bottom: 2px solid var(--primary-dark);
+            padding-bottom: 5px;
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-top: 30px;
+        }
+
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li { margin-bottom: 10px; font-size: 0.9rem; }
+        .sidebar ul li i { width: 20px; color: var(--primary-dark); }
+
+        .content { width: 65%; padding: 30px; }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .section-title i { font-size: 1.5rem; margin-right: 15px; color: var(--primary-dark); }
+        .section-title h2 { margin: 0; font-size: 1.4rem; color: var(--primary-dark); }
+
+        .edu-item { margin-bottom: 20px; }
+        .edu-item h4 { margin: 0; display: flex; justify-content: space-between; }
+
+        @media (max-width: 768px) {
+            .main-body { flex-direction: column; }
+            .sidebar, .content { width: 100%; }
+        }
+        /* --- CSS END --- */
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="header-content">
+                <h1>YAZHINI V</h1>
+                <p>B.TECH INFORMATION TECHNOLOGY</p>
+            </div>
+        </header>
+
+        <div class="main-body">
+            <aside class="sidebar">
+                <div class="profile-img-container">
+                    <img src="your-photo.jpg" alt="Yazhini V Profile">
+                </div>
+
+                <section class="contact-info">
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 9361137138</li>
+                        <li><i class="fas fa-envelope"></i> yazhinivadivel11@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Salem, India</li>
+                    </ul>
+                </section>
+
+                <section class="skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li>C (Intermediate)</li>
+                        <li>Public Relations</li>
+                        <li>Teamwork</li>
+                        <li>JAVA (basic)</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="content">
+                <section class="profile">
+                    <div class="section-title">
+                        <i class="fas fa-user-circle"></i>
+                        <h2>PROFILE</h2>
+                    </div>
+                    <p>I’m an aspiring Software Development Engineer (SDE) eager to grow my technical skills. I enjoy solving challenging problems and am currently focusing on Java, cloud, and AI/ML.</p>
+                </section>
+
+                <section class="education">
+                    <div class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Bannari Amman Institute <span>2024-2028</span></h4>
+                        <p>B.Tech Information Technology</p>
+                        <p><strong>CGPA:</strong> 8.00 / 10.00</p>
+                    </div>
+                </section>
+
+                <section class="technical-exposure">
+                    <div class="section-title">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>PROJECTS & EXPOSURE</h2>
+                    </div>
+                    <ul>
+                        <li>Participated in <strong>2 Hackathons</strong>.</li>
+                        <li>Developed a <strong>Bus Reservation System</strong>.</li>
+                        <li>Winner of 1 Technical Competition.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

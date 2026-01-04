@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazhini V - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #2c3e50;
+            --text-color: #333;
+            --sidebar-bg: #ffffff;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #e0e0e0; color: var(--text-color); line-height: 1.6; }
+        .resume-container { max-width: 900px; margin: 40px auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+        header { background-color: var(--primary-dark); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        .main-body { display: flex; }
+        .sidebar { width: 35%; background-color: var(--sidebar-bg); padding: 20px; border-right: 1px solid #ddd; }
+        .profile-img-container { text-align: center; margin-bottom: 20px; }
+        .profile-img-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-dark);
+        }
+        .sidebar h3 { border-bottom: 2px solid var(--primary-dark); padding-bottom: 5px; color: var(--primary-dark); margin-top: 30px; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li { margin-bottom: 10px; font-size: 0.9rem; }
+        .sidebar ul li i { width: 20px; color: var(--primary-dark); }
+        .content { width: 65%; padding: 30px; }
+        .section-title { display: flex; align-items: center; border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 5px; }
+        .section-title i { font-size: 1.5rem; margin-right: 15px; color: var(--primary-dark); }
+        .section-title h2 { margin: 0; font-size: 1.4rem; color: var(--primary-dark); }
+        @media (max-width: 768px) { .main-body { flex-direction: column; } .sidebar, .content { width: 100%; } }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>YAZHINI V</h1>
+            <p>B.TECH INFORMATION TECHNOLOGY</p>
+        </header>
+        <div class="main-body">
+            <aside class="sidebar">
+                <div class="profile-img-container">
+                    <img src="file:///C:/Users/YAZHINI V/Documents/id%20photo.jpg" alt="Yazhini V Profile">
+                </div>
+                <section class="contact-info">
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 9361137138</li>
+                        <li><i class="fas fa-envelope"></i> yazhinivadivel11@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Salem, India</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li>C (Intermediate)</li>
+                        <li>Public Relations</li>
+                        <li>JAVA (basic)</li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="content">
+                <section class="profile">
+                    <div class="section-title"><i class="fas fa-user-circle"></i><h2>PROFILE</h2></div>
+                    <p>I’m an aspiring Software Development Engineer (SDE) eager to grow my technical skills in Java, cloud, and AI/ML.</p>
+                </section>
+                <section class="education">
+                    <div class="section-title"><i class="fas fa-graduation-cap"></i><h2>EDUCATION</h2></div>
+                    <p><strong>Bannari Amman Institute (2024-2028)</strong><br>B.Tech IT - CGPA: 8.00</p>
+                </section>
+                <section class="technical-exposure">
+                    <div class="section-title"><i class="fas fa-laptop-code"></i><h2>PROJECTS</h2></div>
+                    <ul>
+                        <li>Developed a <strong>Bus Reservation System</strong>.</li>
+                        <li>Participated in 2 Hackathons.</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
