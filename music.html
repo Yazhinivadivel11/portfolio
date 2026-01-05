@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Music Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --bg: #f5f6fa;
+  --card-bg: #ffffff;
+  --primary: #6c63ff;
+  --text-main: #222;
+  --text-sub: #777;
+  --shadow: 0 20px 40px rgba(0,0,0,0.08);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e9ecf5, #fdfdfd);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  width: 320px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+/* Album Art */
+.album-art {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6c63ff, #8a85ff);
+  margin-bottom: 16px;
+}
+
+/* Song Info */
+.song-info {
+  text-align: center;
+}
+
+.song-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.song-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+/* Progress */
+.progress {
+  margin: 20px 0;
+}
+
+.progress input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+  outline: none;
+}
+
+.progress input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-main);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.play-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 10px 20px rgba(108,99,255,0.4);
+}
+
+/* Volume & Favorite */
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.volume {
+  flex: 1;
+  margin-right: 12px;
+}
+
+.volume input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.volume input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.favorite {
+  font-size: 20px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.favorite:hover {
+  color: #ff4d6d;
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="player">
+  <div class="album-art"></div>
+
+  <div class="song-info">
+    <h3>Midnight Dreams</h3>
+    <p>Lo-Fi Artist</p>
+  </div>
+
+  <div class="progress">
+    <input type="range" value="30">
+  </div>
+
+  <div class="controls">
+    <button>⏮</button>
+    <button class="play-btn">▶</button>
+    <button>⏭</button>
+  </div>
+
+  <div class="bottom">
+    <div class="volume">
+      <input type="range" value="70">
+    </div>
+    <div class="favorite">♥</div>
+  </div>
+</div>
+
+</body>
+</html>
+
